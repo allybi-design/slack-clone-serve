@@ -37,11 +37,10 @@ app.post("/authenticate", (req, res) => {
   res.status(authData.status).send(authData.body);
 });
 
-const PORT = 3001;
-app.listen(PORT, err => {
+app.listen(8000, err => {
   if (err) {
     console.error(err);
   } else {
-    console.log(`Running on port ${PORT}`);
+    console.log(`Running on port 8000`);
   }
 });
